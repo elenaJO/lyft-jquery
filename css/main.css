@@ -1,0 +1,50 @@
+*{
+  font-family: 'Raleway', sans-serif !important;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.img{
+  width: 80%;
+  margin-left: 30px;
+}
+
+.img-1{
+  width: 100%;
+}
+.container-img{
+  height: 100vh;
+  background: linear-gradient( rgb(83, 0, 96) 65%, rgb(228, 10, 138));
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* estilos register */
+
+.margin-big{
+  margin-top: 35%;
+}
+
+.container-a{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-a a{
+  padding: 15px;
+  background-color: transparent;
+}
+
+.taxi{
+  background-image: url(../assets/images/taxi-grande.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.vh100{
+	height: 100vh;
+
+}
