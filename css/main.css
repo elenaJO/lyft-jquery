@@ -76,7 +76,7 @@
 }
 
 .margin-bottom{
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .input{
@@ -109,4 +109,27 @@
 .enabled-color{
   background-color: #F9498A;
   font-weight: 900;
+}
+
+/* ventana verify */
+.title{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.input-cod{
+  width: 20px;
+  font-size: 20px;
+  border:none;
+  border-bottom: 1px solid #F61F63;
+  outline: none;
+}
+
+.button-reset{
+  outline: none;
+  background-color: #DDD7F9;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
 }
