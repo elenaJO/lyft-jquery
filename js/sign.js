@@ -1,12 +1,10 @@
+// var numRandom = (Math.floor((Math.random() * 10))).toString();
+// var numRandom1 = (Math.floor((Math.random() * 10))).toString();
+// var numRandom2 = (Math.floor((Math.random() * 10))).toString();
+var numRandom = (9).toString();
+var numRandom1 = (2).toString();
+var numRandom2 = (1).toString();
 $(document).ready(function() {
-  $('#dropdownMenu1').click(function() {
-  //   var $imageFlags = $('#image-flags');
-  //   var $postal = $('#postal');
-  //   console.log($imageFlags.attr('alt'));
-  //   console.log($postal.text());
-    // console.log($('#image-flags').attr('alt'));
-  });
-
   $('#image-flags-1').click(function() {
     var srcImageFlags = $('#image-flags').attr('src');
     var altImageFlags = $('#image-flags').attr('alt');
@@ -86,5 +84,10 @@ $(document).ready(function() {
       $('#button-next').addClass('disabled-color');
       $('#button-next').removeClass('enabled-color');
     }
+  });
+
+  $('#button-next').click(function() {
+    alert('LAB - ' + numRandom + numRandom1 + numRandom2);
+    window.location.href = '../views/verify.html';
   });
 });
