@@ -33,9 +33,11 @@
 }
 
 .container-a a{
-  padding: 15px;
+  padding: 10px;
   background-color: transparent;
-  color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+  color: #FDD316;
 }
 
 .taxi{
@@ -110,7 +112,7 @@
 
 /* ventana verify */
 .title{
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 700;
 }
 
