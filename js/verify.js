@@ -26,7 +26,7 @@ $(document).ready(function() {
         cont = false;
       }
     
-      if (cont === true && cont1 === true && cont2 === true ) {
+      if (cont === true && cont1 === true && cont2 === true) {
         $('#button-next-verify').removeAttr('disabled');
         $('#button-next-verify').removeClass('disabled-color');
         $('#button-next-verify').addClass('enabled-color');
@@ -45,7 +45,7 @@ $(document).ready(function() {
         cont1 = false;
       }
     
-      if (cont === true && cont1 === true && cont2 === true ) {
+      if (cont === true && cont1 === true && cont2 === true) {
         $('#button-next-verify').removeAttr('disabled');
         $('#button-next-verify').removeClass('disabled-color');
         $('#button-next-verify').addClass('enabled-color');
@@ -64,7 +64,7 @@ $(document).ready(function() {
         cont2 = false;
       }
     
-      if (cont === true && cont1 === true && cont2 === true ) {
+      if (cont === true && cont1 === true && cont2 === true) {
         $('#button-next-verify').removeAttr('disabled');
         $('#button-next-verify').removeClass('disabled-color');
         $('#button-next-verify').addClass('enabled-color');
@@ -83,7 +83,7 @@ $(document).ready(function() {
       cont = false;
     }
 
-    if (cont === true && cont1 === true && cont2 === true ) {
+    if (cont === true && cont1 === true && cont2 === true) {
       $('#button-next-verify').removeAttr('disabled');
       $('#button-next-verify').removeClass('disabled-color');
       $('#button-next-verify').addClass('enabled-color');
@@ -101,7 +101,7 @@ $(document).ready(function() {
       cont1 = false;
     }
 
-    if (cont === true && cont1 === true && cont2 === true ) {
+    if (cont === true && cont1 === true && cont2 === true) {
       $('#button-next-verify').removeAttr('disabled');
       $('#button-next-verify').removeClass('disabled-color');
       $('#button-next-verify').addClass('enabled-color');
@@ -119,7 +119,7 @@ $(document).ready(function() {
       cont2 = false;
     }
 
-    if (cont === true && cont1 === true && cont2 === true ) {
+    if (cont === true && cont1 === true && cont2 === true) {
       $('#button-next-verify').removeAttr('disabled');
       $('#button-next-verify').removeClass('disabled-color');
       $('#button-next-verify').addClass('enabled-color');
