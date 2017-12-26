@@ -130,5 +130,7 @@ $(document).ready(function() {
     }
   });
 
- 
+  $('#button-next-verify').click(function() {
+    window.location.href = '../views/form.html';
+  });
 });

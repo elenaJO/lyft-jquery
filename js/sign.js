@@ -4,6 +4,15 @@
 var numRandom = (9).toString();
 var numRandom1 = (2).toString();
 var numRandom2 = (1).toString();
+// var numberRandomNew;
+// numberRandomNew = function() {
+//   var numRandomNew = (Math.floor((Math.random() * 10))).toString();
+//   var numRandomNew1 = (Math.floor((Math.random() * 10))).toString();
+//   var numRandomNew2 = (Math.floor((Math.random() * 10))).toString();
+//   var numberLagNew = numRandomNew + numRandomNew1 + numRandomNew2;
+//   return numberLagNew;
+// };
+// var con = numberRandomNew();
 $(document).ready(function() {
   $('#image-flags-1').click(function() {
     var srcImageFlags = $('#image-flags').attr('src');
@@ -87,7 +96,9 @@ $(document).ready(function() {
   });
 
   $('#button-next').click(function() {
+    // var numberNew = numberRandomNew();
     alert('LAB - ' + numRandom + numRandom1 + numRandom2);
+    // alert('LAB - ' + numberNew);
     window.location.href = '../views/verify.html';
   });
 });

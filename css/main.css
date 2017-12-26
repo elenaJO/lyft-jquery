@@ -126,7 +126,8 @@
 
 .button-reset{
   outline: none;
-  background-color: #DDD7F9;
+  background-color: #A08FEB;
+  color:#fff;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
