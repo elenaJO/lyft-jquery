@@ -1,8 +1,9 @@
 $(document).ready(function() {
+  $('#cod-postal').text('+' + localStorage.codPostal);
   var cont = false;
   var cont1 = false;
   var cont2 = false;
-  var numberRandom, original;
+  var numberRandom;
 
   numberRandom = function() {
     var numRandom = (Math.floor((Math.random() * 10))).toString();
@@ -12,7 +13,26 @@ $(document).ready(function() {
     return numberLag;
   };
 
+  function disable() {
+    $('#button-next-verify').attr('disabled', 'disabled');
+    $('#button-next-verify').addClass('disabled-color');
+    $('#button-next-verify').removeClass('enabled-color');  
+  }
+
+  function enable() {
+    $('#button-next-verify').removeAttr('disabled');
+    $('#button-next-verify').removeClass('disabled-color');
+    $('#button-next-verify').addClass('enabled-color');
+  }
+
   $('#button-reset').click(function() {
+    cont = false;
+    cont1 = false;
+    cont2 = false;
+    $('#cod1').val('');
+    $('#cod2').val('');
+    $('#cod3').val('');
+    disable();
     var numberResent = numberRandom();  
     alert('LAB - ' + numberResent);
     var num1 = (parseInt(numberResent / 100)).toString();
@@ -20,113 +40,86 @@ $(document).ready(function() {
     var num3 = (parseInt((numberResent % 100) % 10)).toString();
     $('#cod1').keyup(function() {
       if ($(this).val() === num1) {
-        console.log('sii1');
         cont = true;
       } else {
         cont = false;
       }
     
       if (cont === true && cont1 === true && cont2 === true) {
-        $('#button-next-verify').removeAttr('disabled');
-        $('#button-next-verify').removeClass('disabled-color');
-        $('#button-next-verify').addClass('enabled-color');
+        enable();
       } else {
-        $('#button-next-verify').attr('disabled', 'disabled');
-        $('#button-next-verify').addClass('disabled-color');
-        $('#button-next-verify').removeClass('enabled-color');  
+        disable(); 
       }
     });
     
     $('#cod2').keyup(function() { 
       if ($(this).val() === num2) {
-        console.log('sii2');
         cont1 = true;
       } else {
         cont1 = false;
       }
     
       if (cont === true && cont1 === true && cont2 === true) {
-        $('#button-next-verify').removeAttr('disabled');
-        $('#button-next-verify').removeClass('disabled-color');
-        $('#button-next-verify').addClass('enabled-color');
+        enable();
       } else {
-        $('#button-next-verify').attr('disabled', 'disabled');
-        $('#button-next-verify').addClass('disabled-color');
-        $('#button-next-verify').removeClass('enabled-color');  
+        disable();
       }
     });
 
     $('#cod3').keyup(function() { 
       if ($(this).val() === num3) {
-        console.log('sii3');
         cont2 = true;
       } else {
         cont2 = false;
       }
     
       if (cont === true && cont1 === true && cont2 === true) {
-        $('#button-next-verify').removeAttr('disabled');
-        $('#button-next-verify').removeClass('disabled-color');
-        $('#button-next-verify').addClass('enabled-color');
-      } else {
-        $('#button-next-verify').attr('disabled', 'disabled');
-        $('#button-next-verify').addClass('disabled-color');
-        $('#button-next-verify').removeClass('enabled-color');  
+        enable();
+      } else {  
+        disable();
       }
     });
   });
 
   $('#cod1').keyup(function() { 
-    if ($(this).val() === numRandom) {
+    if ($(this).val() === localStorage.numRam) {
       cont = true;
     } else {
       cont = false;
     }
 
     if (cont === true && cont1 === true && cont2 === true) {
-      $('#button-next-verify').removeAttr('disabled');
-      $('#button-next-verify').removeClass('disabled-color');
-      $('#button-next-verify').addClass('enabled-color');
+      enable();
     } else {
-      $('#button-next-verify').attr('disabled', 'disabled');
-      $('#button-next-verify').addClass('disabled-color');
-      $('#button-next-verify').removeClass('enabled-color');  
+      disable(); 
     }
   });
 
   $('#cod2').keyup(function() {
-    if ($(this).val() === numRandom1) {
+    if ($(this).val() === localStorage.numRam1) {
       cont1 = true;
     } else {
       cont1 = false;
     }
 
     if (cont === true && cont1 === true && cont2 === true) {
-      $('#button-next-verify').removeAttr('disabled');
-      $('#button-next-verify').removeClass('disabled-color');
-      $('#button-next-verify').addClass('enabled-color');
+      enable();
     } else {
-      $('#button-next-verify').attr('disabled', 'disabled');
-      $('#button-next-verify').addClass('disabled-color');
-      $('#button-next-verify').removeClass('enabled-color');    
+      disable();   
     }
   });
 
   $('#cod3').keyup(function() {
-    if ($(this).val() === numRandom2) {
+    if ($(this).val() === localStorage.numRam2) {
       cont2 = true;
     } else {
       cont2 = false;
     }
 
     if (cont === true && cont1 === true && cont2 === true) {
-      $('#button-next-verify').removeAttr('disabled');
-      $('#button-next-verify').removeClass('disabled-color');
-      $('#button-next-verify').addClass('enabled-color');
+      enable();
     } else {
-      $('#button-next-verify').attr('disabled', 'disabled');
-      $('#button-next-verify').addClass('disabled-color');
-      $('#button-next-verify').removeClass('enabled-color');  
+      disable();  
     }
   });
 

@@ -1,14 +1,16 @@
 $(document).ready(function() {
-  $('#first-name').keyup(function() {
+  // $password.on('input', function()
+
+  $('#first-name').on('input', function() {
     if ($(this).val().match(/[1-9]/)) {
-      alert('No ingresar numeros');
+      alert('No ingrese números');
       $(this).val('');
     } 
   });
 
-  $('#last-name').keyup(function() {
+  $('#last-name').on('input', function() {
     if ($(this).val().match(/[1-9]/)) {
-      alert('No ingresar numeros');
+      alert('No ingrese números');
       $(this).val('');
     } 
   });
@@ -17,7 +19,7 @@ $(document).ready(function() {
     var PATTERNEMAIL = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
     var res = PATTERNEMAIL.test($(this).val());
     if (res === false) {
-      alert('Ingresar correo valido');
+      alert('Ingrese correo válido');
       $(this).val('');
     }
   });
@@ -26,7 +28,7 @@ $(document).ready(function() {
       event.preventDefault();
       window.location.href = '../views/end.html';
     } else {
-      alert('Marque todos los campos');
+      alert('Rellene todos los campos');
       event.preventDefault();
     }
   });
