@@ -1,3 +1,6 @@
 $(document).ready(function() {
-  setTimeout(function() {window.location.href = 'views/register.html'}, 4000);
+  setTimeout(function() {
+    // En tres segundos redirecciona a la ventana register
+    window.location.href = 'views/register.html';
+  }, 4000);
 });

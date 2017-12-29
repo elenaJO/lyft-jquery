@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // funcion para que cambie la bandera seleccionada y el codigo postal
   function bandera(element) {
     var srcImageFlags = $('#image-flags').attr('src');
     var altImageFlags = $('#image-flags').attr('alt');
@@ -38,6 +39,7 @@ $(document).ready(function() {
     bandera($('#image-flags-3'));    
   });
 
+  // si se ingresan 9 digitos se activara en boton
   $('#number-phone').keyup(function() {
     if (($(this).val().length) === 9) {
       $('#button-next').removeAttr('disabled');
@@ -49,7 +51,8 @@ $(document).ready(function() {
       $('#button-next').removeClass('enabled-color');
     }
   });
-
+  
+  // cuando se activa el evento click se creara el codigo y se guardara en localStorage para validarlo en la otra vista
   $('#button-next').click(function() {
     var numRandomNew = (Math.floor((Math.random() * 10))).toString();
     var numRandomNew1 = (Math.floor((Math.random() * 10))).toString();
