@@ -27,16 +27,8 @@ $(document).ready(function() {
     }  
   }
 
-  $('#image-flags-1').click(function() {
-    bandera($('#image-flags-1'));
-  });
-
-  $('#image-flags-2').click(function() {
-    bandera($('#image-flags-2'));    
-  });
-
-  $('#image-flags-3').click(function() {
-    bandera($('#image-flags-3'));    
+  $('.band-cam').click(function() {
+    bandera('#' + $(this).attr('id'));
   });
 
   // si se ingresan 9 digitos se activara en boton
