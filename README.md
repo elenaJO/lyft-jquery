@@ -1,6 +1,7 @@
 # LYFT
 
 Lyft es una App, en el cual permite validar los datos de los usuarios mediante un código de verificación.
+
 ![ventana-1](https://user-images.githubusercontent.com/32310087/36346881-b81cf544-1416-11e8-92fb-cf2e62ff9428.PNG)
 
 ## Desarrollado con
